@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3c304d;
+    color: #000000;
+}
+
+#encabezado {
+    background: url(../imghistoricos/encabezado.jpg) center/cover fixed no-repeat;
+    height: 300px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    border-bottom: solid 5px #000000;
+    opacity: 0.95;
+}
+
+#encabezado h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#title {
+    margin: 40px 0 20px 0;
+    font-size: 50px;
+    color: #00796b;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 12px ;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.61);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #000;
+}
+
+.image-container:hover {
+    transform: scale(1.03);
+}
+
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: #39055783;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    padding: 10px ;
+    padding-right: 35px;
+    border-radius: 40px;
+    border:  solid 3px #1f1f42;
+    outline: none;
+    background-color: #4d4669;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+}
+::placeholder{
+    color: #000;
+}
+button{
+    padding: 10px ;
+    padding-right: 35px;
+    border-radius: 40px;
+    border:  solid 3px #1f1f42;
+    outline: none;
+    background-color: #4d4669;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* TABLET */
+@media (max-width: 992px) {
+    #encabezado h1 {
+        font-size: 3rem;
+    }
+
+    .image-container {
+        width: 45%;
+    }
+
+    input, button {
+        font-size: 0.95rem;
+        padding: 10px 18px;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+    }
+}
+
+/* CELULAR GRANDE */
+@media (max-width: 768px) {
+    #encabezado {
+        height: 220px;
+    }
+
+    #encabezado h1 {
+        font-size: 2.2rem;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    .overlay-text {
+        font-size: 0.95rem;
+        padding: 12px 0;
+    }
+
+    input, button {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* CELULAR PEQUEÑO */
+@media (max-width: 480px) {
+    #encabezado h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .overlay-text {
+        font-size: 0.9rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,184 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== ESTILOS BASE ========== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #528879;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+#encabezado {
+    background: url(../imgmamiferos/header.jpg) center/cover fixed no-repeat;
+    height: 300px;
+    color: rgb(119, 73, 21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    border-bottom: solid 5px #000;
+    opacity: 0.95;
+}
+
+#encabezado h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+/* ========== BUSCADOR ========== */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+}
+
+input,
+button {
+    padding: 12px 20px;
+    border-radius: 40px;
+    border: 3px solid #42341f;
+    background-color: #695e46;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5c523e;
+}
+
+/* ========== GALERÍA DE IMÁGENES ========== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.61);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #000;
+}
+
+.image-container:hover {
+    transform: scale(1.03);
+}
+
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: #645e0d83;
+    color: #000;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* TABLET */
+@media (max-width: 992px) {
+    #encabezado h1 {
+        font-size: 3rem;
+    }
+
+    .image-container {
+        width: 45%;
+    }
+
+    input, button {
+        font-size: 0.95rem;
+        padding: 10px 18px;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+    }
+}
+
+/* CELULAR GRANDE */
+@media (max-width: 768px) {
+    #encabezado {
+        height: 220px;
+    }
+
+    #encabezado h1 {
+        font-size: 2.2rem;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    .overlay-text {
+        font-size: 0.95rem;
+        padding: 12px 0;
+    }
+
+    input, button {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* CELULAR PEQUEÑO */
+@media (max-width: 480px) {
+    #encabezado h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .overlay-text {
+        font-size: 0.9rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

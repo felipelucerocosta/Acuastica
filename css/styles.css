@@ -1,0 +1,156 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO BASE */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2c6992;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+#encabezado {
+    background: url(../img/fonodheader.jpg) center/cover fixed no-repeat;
+    height: 300px;
+    color: rgb(78, 78, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    border-bottom: solid 5px #000000;
+    opacity: 0.95;
+}
+
+#encabezado h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/* SUBTÍTULO */
+#title {
+    margin: 40px 0 20px 0;
+    font-size: 2.5rem;
+    color: #00796b;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+
+/* GALERÍA */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* CONTENEDOR DE IMAGEN */
+.image-container {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.61);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #000;
+}
+
+.image-container:hover {
+    transform: scale(1.03);
+}
+
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* TEXTO SOBRE LA IMAGEN */
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: rgba(0, 121, 107, 0.7);
+    color: #000;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet */
+@media (max-width: 992px) {
+    #encabezado h1 {
+        font-size: 3rem;
+    }
+
+    #title {
+        font-size: 2rem;
+        margin: 30px 0 15px 0;
+    }
+
+    .image-container {
+        width: 45%;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+}
+
+/* Celular grande */
+@media (max-width: 768px) {
+    #encabezado {
+        height: 220px;
+    }
+
+    #encabezado h1 {
+        font-size: 2.5rem;
+    }
+
+    #title {
+        font-size: 1.6rem;
+        margin: 25px 0 15px 0;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+    }
+}
+
+/* Celular chico */
+@media (max-width: 480px) {
+    #encabezado h1 {
+        font-size: 2rem;
+    }
+
+    #title {
+        font-size: 1.4rem;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .overlay-text {
+        font-size: 0.95rem;
+        padding: 10px 0;
+    }
+}
