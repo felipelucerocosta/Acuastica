@@ -8,14 +8,18 @@
 /* ========== BASE ========== */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #04584a;
+  background: url("../imghistoricos/fondo.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: #ffffff;
   line-height: 1.6;
 }
 
+
 /* ========== ENCABEZADO ========== */
 #encabezado {
-  background: url(../img/Fondoencabezasopeces.jpg) center/cover fixed no-repeat;
+  background: url(/encabezado.jpg) center/cover fixed no-repeat;
   height: 300px;
   display: flex;
   align-items: center;
@@ -23,7 +27,7 @@ body {
   text-align: center;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
   border-bottom: solid 5px #000;
-  opacity: 0.95;
+  opacity: 75%;
   padding: 0 20px;
 }
 
