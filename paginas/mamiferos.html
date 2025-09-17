@@ -1,186 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mamiferos</title>
-    <link rel="stylesheet" href="../css/mamiferos.css">
-
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamíferos</title>
+  <link rel="stylesheet" href="../css/mamiferos.css">
 </head>
 <body>
-    <header id="encabezado">
-        <h1>Seccion mamiferos</h1>
-    </header>
-    <div class="container">
-        <input type="text" placeholder="Ingrese Animal">
-        <button id="Buscar">Buscar</button>
+  <!-- Encabezado -->
+  <header id="encabezado">
+    <h1>Sección Mamíferos e Históricos</h1>
+  </header>
+
+  <!-- Buscador -->
+  <div class="container">
+    <input type="text" placeholder="Ingrese Animal">
+    <button id="Buscar">🔍</button>
+  </div>
+
+  <!-- Galería -->
+  <main class="gallery">
+
+    <!-- Mamíferos -->
+    <div class="image-container">
+      <img src="../imgmamiferos/lobomarino.jpg" alt="Lobo marino sudamericano"
+           data-nombre="Lobo marino sudamericano"
+           data-descripcion="Habita en las costas de Sudamérica, vive en colonias muy ruidosas y es un excelente nadador.">
+      <div class="overlay-text">Lobo marino sudamericano</div>
     </div>
-<main class="gallery">
 
-        <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imgmamiferos/lobomarino.jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Lobo marino sudamericano </div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imgmamiferos/Lobo fino de Nueva Zelanda (Arctocephalus forsteri).jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Lobo fino de Nueva Zelanda </div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imgmamiferos/Morsa del Pacífico (Odobenus rosmarus divergens).jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Morsa del Pacífico </div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imgmamiferos/Ballena azul (Balaenoptera musculus).jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Ballena azul </div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imgmamiferos/Zífio de Gervais (Mesoplodon europaeus).jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Zífio de Gervais </div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imgmamiferos/Nutria de mar oriental (Enhydra lutris lutris).jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Nutria de mar oriental </div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imgmamiferos/falsaorca" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Falsa orca</div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imgmamiferos/Manatí del Caribe (Trichechus manatus).jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Manatí del Caribe </div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imgmamiferos/Foca barbuda (Erignathus barbatus).jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Foca barbuda  </div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imghistoricos/spinosurus.jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">spinosaurus</div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imghistoricos/ammonites.jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Ammonites</div>
-            </a>
-        </div>
-         <div class="image-container">
-            <a href="pagina1.html">
-                <img src="../imghistoricos/Belemnites.jpg" alt="Peces tropicales coloridos">
-                <div class="overlay-text">Belemnites</div>
-            </a>
-        </div>
+    <div class="image-container">
+      <img src="../imgmamiferos/Lobo fino de Nueva Zelanda (Arctocephalus forsteri).jpg" alt="Lobo fino de Nueva Zelanda"
+           data-nombre="Lobo fino de Nueva Zelanda"
+           data-descripcion="Vive en las costas de Nueva Zelanda y Australia, es una especie de otárido con gran habilidad de buceo.">
+      <div class="overlay-text">Lobo fino de Nueva Zelanda</div>
+    </div>
 
-        <!-- Repite con otros títulos o enlaces -->
-        <div class="image-container">
-            <img src="../imghistoricos/Conodontos.jpg" alt="Peces tropicales en arrecife">
-            <div class="overlay-text">Conodontos </div>
-        </div>
+    <div class="image-container">
+      <img src="../imgmamiferos/Morsa del Pacífico (Odobenus rosmarus divergens).jpg" alt="Morsa del Pacífico"
+           data-nombre="Morsa del Pacífico"
+           data-descripcion="Mamífero marino con grandes colmillos y bigotes sensibles, vive en aguas frías del Ártico.">
+      <div class="overlay-text">Morsa del Pacífico</div>
+    </div>
 
-        <!-- Puedes agregar diferentes textos en cada overlay -->
-        <div class="image-container">
-            <img src="../imghistoricos/Opabinia" alt="Cardumen de peces">
-            <div class="overlay-text">Opabinia</div>
-        </div>
+    <div class="image-container">
+      <img src="../imgmamiferos/Ballena azul (Balaenoptera musculus).jpg" alt="Ballena azul"
+           data-nombre="Ballena azul"
+           data-descripcion="El animal más grande de la Tierra, puede medir hasta 30 metros y pesar más de 150 toneladas.">
+      <div class="overlay-text">Ballena azul</div>
+    </div>
 
-        <div class="image-container">
-            <img src="../imghistoricos/Hallucigenia.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Hallucigenia</div>
-        </div>
+    <div class="image-container">
+      <img src="../imgmamiferos/Zífio de Gervais (Mesoplodon europaeus).jpg" alt="Zífio de Gervais"
+           data-nombre="Zífio de Gervais"
+           data-descripcion="Un cetáceo de aguas profundas poco visto, habita en el Atlántico.">
+      <div class="overlay-text">Zífio de Gervais</div>
+    </div>
 
-        <div class="image-container">
-            <img src="../imghistoricos/Wiwaxia.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Wiwaxia</div>
-        </div>
+    <div class="image-container">
+      <img src="../imgmamiferos/Nutria de mar oriental (Enhydra lutris lutris).jpg" alt="Nutria de mar oriental"
+           data-nombre="Nutria de mar oriental"
+           data-descripcion="Mamífero marino pequeño que flota boca arriba y usa piedras para abrir moluscos.">
+      <div class="overlay-text">Nutria de mar oriental</div>
+    </div>
 
-        <div class="image-container">
-            <img src="../imghistoricos/Dickinsonia.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Dickinsonia</div>
-        </div>
+    <div class="image-container">
+      <img src="../imgmamiferos/falsaorca.jpg" alt="Falsa orca"
+           data-nombre="Falsa orca"
+           data-descripcion="Cetáceo que se parece a la orca pero más pequeño. Vive en mares cálidos y templados.">
+      <div class="overlay-text">Falsa orca</div>
+    </div>
 
-        <div class="image-container">
-            <img src="../imghistoricos/Pikaia.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Pikaia</div>
-        </div>
+    <div class="image-container">
+      <img src="../imgmamiferos/Manatí del Caribe (Trichechus manatus).jpg" alt="Manatí del Caribe"
+           data-nombre="Manatí del Caribe"
+           data-descripcion="También llamado vaca marina, es un herbívoro que habita en aguas poco profundas del Caribe.">
+      <div class="overlay-text">Manatí del Caribe</div>
+    </div>
 
-        <div class="image-container">
-            <img src="../imghistoricos/Cameroceras.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Cameroceras</div>
-        </div>
+    <div class="image-container">
+      <img src="../imgmamiferos/Foca barbuda (Erignathus barbatus).jpg" alt="Foca barbuda"
+           data-nombre="Foca barbuda"
+           data-descripcion="Foca de gran tamaño que habita en el Ártico, reconocida por sus largos bigotes.">
+      <div class="overlay-text">Foca barbuda</div>
+    </div>
 
-        <div class="image-container">
-            <img src="../imghistoricos/Peloneustes.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Peloneustes</div>
-        </div>
+    <!-- Animales históricos -->
+    <div class="image-container">
+      <img src="../imghistoricos/spinosurus.jpg" alt="Spinosaurus"
+           data-nombre="Spinosaurus"
+           data-descripcion="Un dinosaurio carnívoro semiacuático con gran vela dorsal.">
+      <div class="overlay-text">Spinosaurus</div>
+    </div>
 
-        <div class="image-container">
-            <img src="../imghistoricos/Cryptoclidus.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Cryptoclidus</div>
-        </div>
+    <div class="image-container">
+      <img src="../imghistoricos/ammonites.jpg" alt="Ammonites"
+           data-nombre="Ammonites"
+           data-descripcion="Moluscos marinos extintos con conchas en espiral.">
+      <div class="overlay-text">Ammonites</div>
+    </div>
 
-        <div class="image-container">
-            <img src="../imghistoricos/Tylosaurus.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Tylosaurus</div>
-        </div>
-        <div class="image-container">
-            <img src="../imghistoricos/Edestus.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Edestus</div>
-        </div>
-        <div class="image-container">
-            <img src="../imghistoricos/Dunkleosteus.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Dunkleosteus</div>
-        </div>
-        <div class="image-container">
-            <img src="../imghistoricos/Megalodon.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Megalodon</div>
-        </div>
-        <div class="image-container">
-            <img src="../imghistoricos/Mixosaurus.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Mixosaurus</div>
-        </div>
-        <div class="image-container">
-            <img src="../imghistoricos/Prognathodon.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Prognathodon</div>
-        </div>
-        <div class="image-container">
-            <img src="../imghistoricos/Sidneyia" alt="Pez nadando entre corales">
-            <div class="overlay-text">Sidneyia</div>
-        </div>
-        <div class="image-container">
-            <img src="../imghistoricos/Titanichthys.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Titanichthys</div>
-        </div>
-        <div class="image-container">
-            <img src="../imghistoricos/Ctenacanthus.jpg" alt="Pez nadando entre corales">
-            <div class="overlay-text">Ctenacanthus</div>
-        </div>
+    <div class="image-container">
+      <img src="../imghistoricos/Belemnites.jpg" alt="Belemnites"
+           data-nombre="Belemnites"
+           data-descripcion="Parientes extintos de los calamares, con concha interna dura.">
+      <div class="overlay-text">Belemnites</div>
+    </div>
 
+    <div class="image-container">
+      <img src="../imghistoricos/Conodontos.jpg" alt="Conodontos"
+           data-nombre="Conodontos"
+           data-descripcion="Animales primitivos marinos, conocidos por sus fósiles dentales.">
+      <div class="overlay-text">Conodontos</div>
+    </div>
 
+    <div class="image-container">
+      <img src="../imghistoricos/Opabinia.jpg" alt="Opabinia"
+           data-nombre="Opabinia"
+           data-descripcion="Un extraño animal del Cámbrico con cinco ojos y una trompa frontal.">
+      <div class="overlay-text">Opabinia</div>
+    </div>
 
-        <!-- Añadir más según sea necesario -->
-    </main>
-<script src="../js/script.js" defer></script>
+    <div class="image-container">
+      <img src="../imghistoricos/Hallucigenia.jpg" alt="Hallucigenia"
+           data-nombre="Hallucigenia"
+           data-descripcion="Criatura del Cámbrico con espinas dorsales y múltiples patas.">
+      <div class="overlay-text">Hallucigenia</div>
+    </div>
 
+    <div class="image-container">
+      <img src="../imghistoricos/Wiwaxia.jpg" alt="Wiwaxia"
+           data-nombre="Wiwaxia"
+           data-descripcion="Animal marino del Cámbrico con escamas y espinas protectoras.">
+      <div class="overlay-text">Wiwaxia</div>
+    </div>
 
+    <div class="image-container">
+      <img src="../imghistoricos/Dickinsonia.jpg" alt="Dickinsonia"
+           data-nombre="Dickinsonia"
+           data-descripcion="Uno de los primeros animales pluricelulares conocidos, del período Ediacárico.">
+      <div class="overlay-text">Dickinsonia</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Pikaia.jpg" alt="Pikaia"
+           data-nombre="Pikaia"
+           data-descripcion="Un cordado primitivo, antepasado de los vertebrados.">
+      <div class="overlay-text">Pikaia</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Cameroceras.jpg" alt="Cameroceras"
+           data-nombre="Cameroceras"
+           data-descripcion="Un cefalópodo gigante del Ordovícico.">
+      <div class="overlay-text">Cameroceras</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Peloneustes.jpg" alt="Peloneustes"
+           data-nombre="Peloneustes"
+           data-descripcion="Un reptil marino jurásico con hocico alargado y dientes afilados.">
+      <div class="overlay-text">Peloneustes</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Cryptoclidus.jpg" alt="Cryptoclidus"
+           data-nombre="Cryptoclidus"
+           data-descripcion="Plesiosaurio marino del Jurásico.">
+      <div class="overlay-text">Cryptoclidus</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Tylosaurus.jpg" alt="Tylosaurus"
+           data-nombre="Tylosaurus"
+           data-descripcion="Un gran mosasaurio del Cretácico.">
+      <div class="overlay-text">Tylosaurus</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Edestus.jpg" alt="Edestus"
+           data-nombre="Edestus"
+           data-descripcion="Conocido como el tiburón con 'tijeras', tenía dientes en forma de cuchillas.">
+      <div class="overlay-text">Edestus</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Dunkleosteus.jpg" alt="Dunkleosteus"
+           data-nombre="Dunkleosteus"
+           data-descripcion="Un pez acorazado gigante del Devónico, con mandíbulas poderosas.">
+      <div class="overlay-text">Dunkleosteus</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Megalodon.jpg" alt="Megalodon"
+           data-nombre="Megalodon"
+           data-descripcion="Un tiburón prehistórico gigante, depredador tope de los océanos.">
+      <div class="overlay-text">Megalodon</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Mixosaurus.jpg" alt="Mixosaurus"
+           data-nombre="Mixosaurus"
+           data-descripcion="Ictiosaurio del Triásico con cuerpo intermedio entre lagarto y pez.">
+      <div class="overlay-text">Mixosaurus</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Prognathodon.jpg" alt="Prognathodon"
+           data-nombre="Prognathodon"
+           data-descripcion="Un mosasaurio de gran tamaño con dientes robustos.">
+      <div class="overlay-text">Prognathodon</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Sidneyia.jpg" alt="Sidneyia"
+           data-nombre="Sidneyia"
+           data-descripcion="Un artrópodo marino del Cámbrico que se alimentaba de pequeños organismos.">
+      <div class="overlay-text">Sidneyia</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Titanichthys.jpg" alt="Titanichthys"
+           data-nombre="Titanichthys"
+           data-descripcion="Un pez acorazado gigante que se alimentaba por filtración.">
+      <div class="overlay-text">Titanichthys</div>
+    </div>
+
+    <div class="image-container">
+      <img src="../imghistoricos/Ctenacanthus.jpg" alt="Ctenacanthus"
+           data-nombre="Ctenacanthus"
+           data-descripcion="Un tiburón primitivo del Devónico y Carbonífero.">
+      <div class="overlay-text">Ctenacanthus</div>
+    </div>
+
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" id="close">&times;</span>
+      <h2 id="titulo"></h2>
+      <p id="descripcion"></p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    const modal = document.getElementById("modal");
+    const titulo = document.getElementById("titulo");
+    const descripcion = document.getElementById("descripcion");
+    const closeBtn = document.getElementById("close");
+
+    document.querySelectorAll(".gallery img").forEach(img => {
+      img.addEventListener("click", () => {
+        titulo.textContent = img.dataset.nombre;
+        descripcion.textContent = img.dataset.descripcion;
+        modal.style.display = "flex";
+      });
+    });
+
+    closeBtn.onclick = () => modal.style.display = "none";
+    window.onclick = e => { if (e.target == modal) modal.style.display = "none"; };
+  </script>
 </body>
 </html>
